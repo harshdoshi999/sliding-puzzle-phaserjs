@@ -18,7 +18,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
 var json = '';
-$.getJSON("develop.json", function(json) {
+$.getJSON("config.json", function(json) {
     game = new Phaser.Game(json.imageWidth, json.imageHeight, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create });
 
     var PIECE_WIDTH = json.pieceWidth,
