@@ -1,0 +1,21 @@
+{
+  "images": {
+    "puzzleImage": "https://timesofindia.indiatimes.com/thumb/msid-62806129,imgsize-140786,width-800,height-600,resizemode-4/62806129.jpg"
+  },
+  "@@editor": [
+    {
+      "key": "images",
+      "name": "Images",
+      "icon": "🖼️",
+      "source": "images.json",
+      "fields": [
+        {
+          "key": "puzzleImage",
+          "name": "Icon",
+          "description": "Puzzle Image",
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}

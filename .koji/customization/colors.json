@@ -1,0 +1,21 @@
+{
+  "colors": {
+    "textColor": "#000000"
+  },
+  "@@editor": [
+    {
+      "key": "colors",
+      "name": "Colors",
+      "icon": "💅",
+      "source": "colors.json",
+      "fields": [
+        {
+          "key": "textColor",
+          "name": "Text color",
+          "description": "Default color for Finish Text",
+          "type": "color"
+        }
+      ]
+    }
+  ]
+}
