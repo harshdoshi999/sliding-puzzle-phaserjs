@@ -1,8 +1,6 @@
 {
   "strings": {
-    "content": "Congratulations! You made it.",
-    "pieceWidth":800,
-    "pieceHeight":600
+    "content": "Great Job!!"
   },
   "@@editor": [
     {
@@ -15,34 +13,6 @@
           "key": "content",
           "name": "Finish Text",
           "description": "The text that is displayed once game is finished",
-          "type": "text"
-        }
-      ]
-    },
-    {
-      "key": "strings",
-      "name": "Strings",
-      "icon": "📚",
-      "source": "strings.json",
-      "fields": [
-        {
-          "key": "pieceWidth",
-          "name": "Puzzle Piece Width",
-          "description": "Width of the each puzzle piece",
-          "type": "text"
-        }
-      ]
-    },
-    {
-      "key": "strings",
-      "name": "Strings",
-      "icon": "📚",
-      "source": "strings.json",
-      "fields": [
-        {
-          "key": "pieceHeight",
-          "name": "Puzzle Piece Height",
-          "description": "Height of the each puzzle piece",
           "type": "text"
         }
       ]

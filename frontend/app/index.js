@@ -1,17 +1,36 @@
-var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.CANVAS, '', { preload: preload, create: create });
-var sprite;
+var width = window.innerWidth;
+var height = window.innerHeight;
+if(height>width){
+    width = window.innerHeight;
+    height = window.innerWidth;
+}
 
-var PIECE_WIDTH = Koji.config.images.pieceWidth,
-    PIECE_HEIGHT = Koji.config.images.pieceHeight,
+var PIECE_WIDTH,
+    PIECE_HEIGHT,
     BOARD_COLS,
     BOARD_ROWS;
+
+if(width < 768){
+    PIECE_WIDTH = 75;
+    PIECE_HEIGHT = 75;
+} else if(width < 992){
+    PIECE_WIDTH = 100;
+    PIECE_HEIGHT = 100;
+} else{
+    PIECE_WIDTH = 200;
+    PIECE_HEIGHT = 200;
+}
+
+temp = Math.floor(height / PIECE_WIDTH);
+
+game = new Phaser.Game(PIECE_WIDTH*temp, PIECE_WIDTH*temp, Phaser.CANVAS, '', { preload: preload, create: create });
 
 var piecesGroup,
     piecesAmount,
     shuffledIndexArray = []; 
 
 function preload() {
-    game.load.spritesheet("background", Koji.config.images.puzzleImage, PIECE_WIDTH, PIECE_HEIGHT);
+    game.load.spritesheet("background", Koji.config.images.puzzle, PIECE_WIDTH, PIECE_HEIGHT);
 }
 
 function create() {

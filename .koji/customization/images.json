@@ -1,6 +1,6 @@
 {
   "images": {
-    "puzzleImage": "https://timesofindia.indiatimes.com/thumb/msid-62806129,imgsize-140786,width-800,height-600,resizemode-4/62806129.jpg"
+    "puzzle": "https://objects.koji-cdn.com/cd61ab4e-6f66-4df2-90bd-f84b10a9952f/a6c413d71d8b4e85af3dc8638010343bjpg"
   },
   "@@editor": [
     {
@@ -10,9 +10,9 @@
       "source": "images.json",
       "fields": [
         {
-          "key": "puzzleImage",
-          "name": "Icon",
-          "description": "Puzzle Image",
+          "key": "puzzle",
+          "name": "Background",
+          "description": "Its important to upload a square image.",
           "type": "image"
         }
       ]
