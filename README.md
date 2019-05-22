@@ -1,10 +1,9 @@
-# Koji Phaser 2 Scaffold
+# Sliding Puzzle Game
 
-*A great starting point for any Phaser 2 project*
+*Developed in PhaserJS*
 
 ## Getting Started
-Write your Phaser 2 code [here](#~/frontend/app/index.js).
+Pick your right image and upload in images section under customization and you're done!!
 
 ## Support and suggestions
-Please feel free to [contact me](https://gokoji.com/profile/jones) if you have any suggestions!   
-
+Please feel free to [contact me](https://gokoji.com/profile/harshdoshihauper) if you have any suggestions or issues!
