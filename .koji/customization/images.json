@@ -1,6 +1,8 @@
 {
   "images": {
-    "puzzle": "https://objects.koji-cdn.com/cd61ab4e-6f66-4df2-90bd-f84b10a9952f/a6c413d71d8b4e85af3dc8638010343bjpg"
+    "puzzle_desktop": "https://images.koji-cdn.com/cd61ab4e-6f66-4df2-90bd-f84b10a9952f/desktop.jpg",
+    "puzzle_mobile": "https://images.koji-cdn.com/cd61ab4e-6f66-4df2-90bd-f84b10a9952f/mobile225.jpg",
+    "puzzle_tablet": "https://images.koji-cdn.com/cd61ab4e-6f66-4df2-90bd-f84b10a9952f/tablet.jpg"
   },
   "@@editor": [
     {
@@ -10,9 +12,21 @@
       "source": "images.json",
       "fields": [
         {
-          "key": "puzzle",
-          "name": "Background",
-          "description": "Its important to upload a square image.",
+          "key": "puzzle_desktop",
+          "name": "Puzzle image for Desktop",
+          "description": "Upload image of 600x600 resolution.",
+          "type": "image"
+        },
+        {
+          "key": "puzzle_mobile",
+          "name": "Puzzle image for Mobile",
+          "description": "Upload image of 225x225 resolution.",
+          "type": "image"
+        },
+        {
+          "key": "puzzle_tablet",
+          "name": "Puzzle image for Tablet",
+          "description": "Upload image of 300x300 resolution.",
           "type": "image"
         }
       ]

@@ -1,9 +1,9 @@
 var width = window.innerWidth;
 var height = window.innerHeight;
-if(height>width){
+/*if(height>width){
     width = window.innerHeight;
     height = window.innerWidth;
-}
+}*/
 
 var PIECE_WIDTH,
     PIECE_HEIGHT,
@@ -13,28 +13,36 @@ var PIECE_WIDTH,
 if(width < 768){
     PIECE_WIDTH = 75;
     PIECE_HEIGHT = 75;
-} else if(width < 992){
+    var image = Koji.config.images.puzzle_mobile;
+} else if(width >= 768 && width < 992){
     PIECE_WIDTH = 100;
     PIECE_HEIGHT = 100;
+    var image = Koji.config.images.puzzle_tablet;
 } else{
     PIECE_WIDTH = 200;
     PIECE_HEIGHT = 200;
+    var image = Koji.config.images.puzzle_desktop;
 }
+
 
 temp = Math.floor(height / PIECE_WIDTH);
 
-game = new Phaser.Game(PIECE_WIDTH*temp, PIECE_WIDTH*temp, Phaser.CANVAS, '', { preload: preload, create: create });
+game = new Phaser.Game(PIECE_WIDTH*3, PIECE_WIDTH*3, Phaser.CANVAS, '', { preload: preload, create: create });
 
 var piecesGroup,
     piecesAmount,
     shuffledIndexArray = []; 
 
 function preload() {
-    game.load.spritesheet("background", Koji.config.images.puzzle, PIECE_WIDTH, PIECE_HEIGHT);
+    game.load.spritesheet("background", image, PIECE_WIDTH, PIECE_HEIGHT);
 }
 
 function create() {
     prepareBoard();
+    //alert(image);
+    //alert(PIECE_WIDTH*3);
+    //alert(PIECE_WIDTH);
+    //alert(PIECE_HEIGHT);
 }
 
 function prepareBoard() {
@@ -43,8 +51,8 @@ function prepareBoard() {
         i, j,
         piece;
 
-    BOARD_COLS = Math.floor(game.world.width / PIECE_WIDTH);
-    BOARD_ROWS = Math.floor(game.world.height / PIECE_HEIGHT);
+    BOARD_COLS = 3;
+    BOARD_ROWS = 3;
 
     piecesAmount = BOARD_COLS * BOARD_ROWS;
 
